@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-jz-ssj">
-                                        <rect key="frame" x="42" y="77.333333333333329" width="291" height="145.66666666666669"/>
+                                        <rect key="frame" x="42" y="69.333333333333329" width="291" height="161.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Detector" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZD-Mq-cgD">
                                                 <rect key="frame" x="0.0" y="0.0" width="291" height="56.666666666666664"/>
@@ -30,7 +30,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-beer-80" translatesAutoresizingMaskIntoConstraints="NO" id="Gux-s9-hQj">
-                                                <rect key="frame" x="113.66666666666666" y="81.666666666666671" width="64" height="64.000000000000014"/>
+                                                <rect key="frame" x="105.66666666666666" y="81.666666666666671" width="80" height="80.000000000000014"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -151,20 +151,20 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LaZero Kawer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N23-RS-3k5">
-                                                <rect key="frame" x="13" y="167" width="137.66666666666666" height="27.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lazaro Kawer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N23-RS-3k5">
+                                                <rect key="frame" x="14.666666666666657" y="167" width="134.33333333333334" height="27.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bobi T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-mu-bKN">
-                                                <rect key="frame" x="49.999999999999986" y="222.66666666666669" width="64" height="27.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roberto Treviño" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-mu-bKN">
+                                                <rect key="frame" x="4" y="222.66666666666669" width="155.66666666666666" height="27.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-yT-Atb">
-                                                <rect key="frame" x="68.999999999999986" y="278.33333333333337" width="25.666666666666671" height="27.666666666666686"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juan P. Ramos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-yT-Atb">
+                                                <rect key="frame" x="9.6666666666666572" y="278.33333333333337" width="144.33333333333334" height="27.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -217,7 +217,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-beer-80" width="64" height="64"/>
-        <image name="icons8-delete-416" width="312" height="312"/>
+        <image name="icons8-beer-80" width="80" height="80"/>
+        <image name="icons8-delete-416" width="416" height="416"/>
     </resources>
 </document>
