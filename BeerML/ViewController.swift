@@ -16,9 +16,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var rootLayer: CALayer! = nil
     
     @IBOutlet weak private var previewView: UIView!
+    
+    
     private let session = AVCaptureSession()
     private var previewLayer: AVCaptureVideoPreviewLayer! = nil
     private let videoDataOutput = AVCaptureVideoDataOutput()
+    
+    let backButton = UIButton(frame: CGRect(x: 15, y: 35, width: 45, height: 45))
+    
     
     private let videoDataOutputQueue = DispatchQueue(label: "VideoDataOutput", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
     
@@ -29,6 +34,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
+        setUpBackButton()
+    }
+    
+    func setUpBackButton() {
+        backButton.setImage(UIImage(named: "icons8-delete-416"), for: .normal)
+        backButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        previewView.addSubview(backButton)
+    }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,9 +55,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     func setupAVCapture() {
         var deviceInput: AVCaptureDeviceInput!
         
+        
+        
         // Select a video device, make an input
         let videoDevice = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .back).devices.first
         do {
+            videoDevice?.configureDesiredFrameRate(5)
             deviceInput = try AVCaptureDeviceInput(device: videoDevice!)
         } catch {
             print("Could not create video device input: \(error)")
@@ -71,6 +90,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
         let captureConnection = videoDataOutput.connection(with: .video)
         // Always process the frames
+        
         captureConnection?.isEnabled = true
         do {
             try  videoDevice!.lockForConfiguration()
@@ -122,5 +142,34 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         return exifOrientation
     }
 }
-
+extension AVCaptureDevice {
+    
+    func configureDesiredFrameRate(_ desiredFrameRate: Int) {
+        
+        var isFPSSupported = false
+        
+        do {
+            
+            if let videoSupportedFrameRateRanges = activeFormat.videoSupportedFrameRateRanges as? [AVFrameRateRange] {
+                for range in videoSupportedFrameRateRanges {
+                    if (range.maxFrameRate >= Double(desiredFrameRate) && range.minFrameRate <= Double(desiredFrameRate)) {
+                        isFPSSupported = true
+                        break
+                    }
+                }
+            }
+            
+            if isFPSSupported {
+                try lockForConfiguration()
+                activeVideoMaxFrameDuration = CMTimeMake(value: 1, timescale: Int32(desiredFrameRate))
+                activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: Int32(desiredFrameRate))
+                unlockForConfiguration()
+            }
+            
+        } catch {
+            print("lockForConfiguration error: \(error.localizedDescription)")
+        }
+    }
+    
+}
 

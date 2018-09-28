@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C372933215DA6F40095370E /* MyCustomObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C372932215DA6F40095370E /* MyCustomObjectDetector.mlmodel */; };
+		3C8B78F4215DC58800E06FDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B78F3215DC58800E06FDE /* HomeViewController.swift */; };
+		3C8B78F6215DC8F000E06FDE /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B78F5215DC8F000E06FDE /* CreditsViewController.swift */; };
 		41DAB9E6215D89CA00BC69B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAB9E5215D89CA00BC69B3 /* AppDelegate.swift */; };
 		41DAB9E8215D89CA00BC69B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DAB9E7215D89CA00BC69B3 /* ViewController.swift */; };
 		41DAB9EB215D89CA00BC69B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DAB9E9215D89CA00BC69B3 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		3C372932215DA6F40095370E /* MyCustomObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyCustomObjectDetector.mlmodel; sourceTree = SOURCE_ROOT; };
+		3C8B78F3215DC58800E06FDE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3C8B78F5215DC8F000E06FDE /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		41DAB9E2215D89CA00BC69B3 /* BeerML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DAB9E5215D89CA00BC69B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41DAB9E7215D89CA00BC69B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				3C372932215DA6F40095370E /* MyCustomObjectDetector.mlmodel */,
 				41DAB9F1215D89CB00BC69B3 /* Info.plist */,
 				41DAB9F7215D8A2700BC69B3 /* ObjectRecognition.swift */,
+				3C8B78F3215DC58800E06FDE /* HomeViewController.swift */,
+				3C8B78F5215DC8F000E06FDE /* CreditsViewController.swift */,
 			);
 			path = BeerML;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8B78F4215DC58800E06FDE /* HomeViewController.swift in Sources */,
+				3C8B78F6215DC8F000E06FDE /* CreditsViewController.swift in Sources */,
 				3C372933215DA6F40095370E /* MyCustomObjectDetector.mlmodel in Sources */,
 				41DAB9E8215D89CA00BC69B3 /* ViewController.swift in Sources */,
 				41DAB9F8215D8A2700BC69B3 /* ObjectRecognition.swift in Sources */,
