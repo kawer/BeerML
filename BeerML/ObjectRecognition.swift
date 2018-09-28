@@ -148,7 +148,8 @@ class VisionObjectRecognitionViewController: ViewController {
         shapeLayer.bounds = bounds
         shapeLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
         shapeLayer.name = "Found Object"
-        shapeLayer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 0.2, 0.4])
+        shapeLayer.borderWidth = 1
+//        shapeLayer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 0.2, 0.4])
         shapeLayer.cornerRadius = 7
         return shapeLayer
     }
