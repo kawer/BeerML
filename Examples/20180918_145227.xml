@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Fotirris</folder>
+	<filename>20180918_145227.jpg</filename>
+	<path>C:\Users\Sandro\Documents\Fotirris\20180918_145227.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1382</width>
+		<height>1036</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>strongbowA</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>419</xmin>
+			<ymin>478</ymin>
+			<xmax>1147</xmax>
+			<ymax>694</ymax>
+		</bndbox>
+	</object>
+</annotation>
