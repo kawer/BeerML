@@ -1,7 +1,7 @@
 # BeerML
 
 ## Description
-This iOS application uses **Coreml** and *convolutional neural network model* in order to predict several types of beer bottles and cans.
+This iOS application uses **Coreml** and a *convolutional neural network model* in order to predict several types of beer bottles and cans.
 
 ## Model
 The current version has a trained model with approximately 1,700 images and 7,000 iterations. There is a loss of 1.67.
