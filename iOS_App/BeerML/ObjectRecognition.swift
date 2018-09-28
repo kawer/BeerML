@@ -148,7 +148,7 @@ class VisionObjectRecognitionViewController: ViewController {
     func createRoundedRectLayerWithBounds(_ bounds: CGRect) -> CALayer {
         let shapeLayer = CALayer()
         shapeLayer.bounds = bounds
-        shapeLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
+        shapeLayer.position = CGPoint(x: bounds.midX - bounds.midX / 4, y: bounds.midY)
         shapeLayer.name = "Found Object"
         shapeLayer.borderWidth = 5
         shapeLayer.borderColor = UIColor.green.cgColor
